@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>lzy</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+	<main>
+      <div id="overlay"></div>
+      <ul id="scene">
+      <li class="layer" data-depth="0.2">
+          <div class="layer0"></div>
+        </li>
+        <li class="layer" data-depth="0.4">
+          <div class="layer1"></div>
+        </li>
+        <li class="layer" data-depth="0.6">
+          <div class="layer2"></div>
+        </li>
+		<li class="layer" data-depth="0.8">
+          <div class="layer3"></div>
+        </li>
+        
+		<li class="layer" data-depth="0.9">
+          <div class="layer4"></div>
+        </li>
+      </ul>
+</main>
+	
+
+<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script src='js/jquery.parallax.min.js'></script>
+	<script>
+	$(document).ready(function () {
+	    $('#scene').parallax();
+	});
+	</script>
+</body>
+</html>
